@@ -9,8 +9,8 @@ import firefly
 
 LOANS_DIR = "/data/loans"
 
-credit_grade_api = firefly.Client("https://credit-risk-service--creditgrade.rorocloud.io/")
-api = firefly.Client("https://credit-risk-service--api.rorocloud.io/")
+credit_grade_api = firefly.Client("https://credit-risk-demo--creditgrade.rorocloud.io/")
+api = firefly.Client("https://credit-risk-demo--api.rorocloud.io/")
 
 def get_loans():
     """Returns all the existing loans.

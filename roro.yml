@@ -1,4 +1,3 @@
-project: credit-risk-service
 runtime: python3
 
 services:
