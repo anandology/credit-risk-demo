@@ -1,0 +1,16 @@
+project: credit-risk-service
+runtime: python3
+
+services:
+    - name: api
+      function: predict.predict
+      size: S1
+
+    - name: creditgrade
+      function: credit_grade.find_credit_grade
+      size: S1
+
+    - name: default
+      command: gunicorn -w4 webapp:app
+      directory: webapp/
+      size: S1
